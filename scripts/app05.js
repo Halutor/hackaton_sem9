@@ -1,10 +1,10 @@
 // Código para ejercicio Nro 05
-var base= parseInt(prompt('Ingrese Altura'));
+var radio= parseInt(prompt('Ingrese el radio'));
 
-console.log(`El área del triangulo es: ${areaTriangulo(base, altura)}`);
+console.log(`El área de la Circunferencia es: ${areaCircunferencia(radio)}`);
 
-//Área del triangulo
-function areaTriangulo(num1, num2) {
-    area = (num1 * num2) / 2;
+//Área de circunferencia
+function areaCircunferencia(num1) {
+    area = num1 * 3.1415;
     return area;
 }
