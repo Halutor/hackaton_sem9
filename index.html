@@ -1,14 +1,344 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-    
+
+    <div class="container">
+        <!-- Cabecera de página -->
+        <header class="header">
+
+            <img src="https://image.flaticon.com/icons/png/512/1465/1465557.png" alt="" class="header__logo">
+
+            <nav class="header__menu">
+                <ul class="header__containerItems">
+
+                    <li class="header__item"><a href="x" class="header__link header--active">Home</a></li>
+                    <li class="header__item"><a href="x" class="header__link">Foro</a></li>
+                    <li class="header__item"><a href="x" class="header__link">Ingrese</a></li>
+                </ul>
+
+            </nav>
+        </header>
+
+        <main class="main">
+
+            <section class="main__portada">
+
+                <h1 class="main__content">Código en JS del reto 02 </h1>
+                <h1 class="main__content">(Dar Click en cada Pregunta)</h1>
+                <p class="main__content">a continuación mediante sencillos algoritmos se mostrará la solución del reto
+                    02.
+                </p>
+
+            </section>
+
+        </main>
 
 
-    <script src="./scripts/app.js"></script>
+        <section class="section">
+            <ol class="section__containerItems">
+
+                <li class="section__item">
+                    <p class="section__title"><a href="./question01.html" target="_blank"> Implementar un algoritmo que
+                            reciba 2 argumentos y los sume,
+                            el resultado
+                            se
+                            deberá imprimir en pantalla</a></p>
+                    <p class="section__parrafo">
+                        var numero01= parseInt(prompt('Ingrese primer número')); <br>
+                        var numero02= parseInt(prompt('Ingrese segundo número'));<br>
+
+                        console.log(`La suma es: ${suma2(numero01, numero02)}`);<br>
+
+                        //Función Suma de 2 números<br>
+                        function suma2(num1, num2) {<br>
+                        sumaFinal = num1 + num2;<br>
+                        return sumaFinal;<br>
+                        }
+
+                    </p>
+                </li>
+                <li class="section__item">
+                    <p class="section__title"><a href="./question02.html" target="_blank">Un estudiante realiza 4
+                            exámenes, calcular el promedio de estos</a></p>
+                    <p class="section__parrafo">
+                        // Código para ejercicio Nro 02 <br>
+                        var numero01= parseInt(prompt('Ingrese primera nota')); <br>
+                        var numero02= parseInt(prompt('Ingrese segunda nota')); <br>
+                        var numero03= parseInt(prompt('Ingrese tercera nota')); <br>
+                        var numero04= parseInt(prompt('Ingrese cuarta nota')); <br>
+
+                        console.log(`El promedio es: ${promedio4(numero01, numero02, numero03, numero04)}`); <br>
+
+                        //Promedio <br>
+                        function promedio4(num1, num2, num3, num4) { <br>
+                        promFinal = (num1 + num2 + num3 + num4) / 4; <br>
+                        return promFinal; <br>
+                        } <br>
+                    </p>
+                </li>
+                <li class="section__item">
+                    <p class="section__title"><a href="./question03.html" target="_blank">Calcular el área de un
+                            rectángulo</a></p>
+                    <p class="section__parrafo">
+                        // Código para ejercicio Nro 03 <br>
+                        var base= parseInt(prompt('Ingrese Altura')); <br>
+                        var altura= parseInt(prompt('Ingrese Base')); <br>
+
+
+                        console.log(`El área del rectangulo es: ${areaRectangulo(base, altura)}`); <br>
+
+                        //Área del rectangulo <br>
+                        function areaRectangulo(num1, num2) { <br>
+                        area = num1 * num2; <br>
+                        return area; <br>
+                        } <br>
+
+                    </p>
+                </li>
+                <li class="section__item">
+                    <p class="section__title"><a href="./question04.html" target="_blank">Calcular el área de un
+                            triángulo</a></p>
+                    <p class="section__parrafo">
+                        // Código para ejercicio Nro 04 <br>
+                        var base= parseInt(prompt('Ingrese Altura')); <br>
+                        var altura= parseInt(prompt('Ingrese Base')); <br>
+
+
+                        console.log(`El área del triangulo es: ${areaTriangulo(base, altura)}`); <br>
+
+                        //Área del triangulo <br>
+                        function areaTriangulo(num1, num2) { <br>
+                        area = (num1 * num2) / 2; <br>
+                        return area; <br>
+                        } <br>
+
+                    </p>
+                </li>
+                <li class="section__item">
+                    <p class="section__title">Calcular el área de una circunferencia</p>
+                    <p class="section__parrafo">Inicio <br>
+                        Variables: radio, area, pi=3.1415 <br>
+                        Escribir ("Introducir radio") <br>
+                        Leer (radio) <br>
+
+                        area = pi * (radio^2)<br>
+                        Escribir ("El área de la circunferencia es: ", area) <br>
+                        Fin
+                    </p>
+                </li>
+                <li class="section__item">
+                    <p class="section__title">Determinar el sueldo semanal de un trabajador basándose en sus horas
+                        trabajadas y su salario de hora hombre</p>
+                    <p class="section__parrafo">Inicio <br>
+                        Variables: hora_t, pago_xh, sueldo_sem <br>
+                        Escribir ("Introducir Horas trabajados") <br>
+                        Leer (hora_t) <br>
+                        Escribir ("Introducir pago por hora") <br>
+                        Leer (pago_xh) <br>
+                        sueldo_sem = hora_t * pago_xh<br>
+                        Escribir ("El pago semanal es: ", sueldo_sem) <br>
+                        Fin
+                    </p>
+                </li>
+                <li class="section__item">
+                    <p class="section__title">Una modista, para realizar sus prendas de vestir, encarga las telas al
+                        extranjero.
+                        Para cada pedido, tiene que proporcionar las medidas de la tela en pulgadas,
+                        pero ella generalmente las tiene en metros. Realice un algoritmo para ayudar a
+                        resolver el problema, determinando cuantas pulgadas debe pedir con base en
+                        los metros que requiere. Represéntelo mediante el diagrama de flujo y el
+                        pseudocódigo (1 pulgada = 0.0254 m).</p>
+                    <p class="section__parrafo">Inicio <br>
+                        Variables: metros, pulgada=0.0254, resultado <br>
+                        Escribir ("Introducir Metros") <br>
+                        Leer (metros) <br>
+                        resultado = metros * pulgada<br>
+                        Escribir ("Pedir: ", resultado , "pulgadas") <br>
+                        Fin
+                    </p>
+                </li>
+                <li class="section__item">
+                    <p class="section__title">Una empresa importadora desea determinar cuántos dólares puede adquirir
+                        con equis cantidad de dinero peruano</p>
+                    <p class="section__parrafo">Inicio <br>
+                        Variables: soles, dolar=3.65, resultado <br>
+                        Escribir ("Introducir Soles") <br>
+                        Leer (soles) <br>
+                        resultado = soles / dolar<br>
+                        Escribir ("Dolares Obtenidos = ", resultado) <br>
+                        Fin
+                    </p>
+                </li>
+                <li class="section__item">
+                    <p class="section__title">Una empresa que contrata personal requiere determinar la edad de las
+                        personas que solicitan trabajo, pero cuando se les realiza la entrevista sólo se
+                        les pregunta el año en que nacieron</p>
+                    <p class="section__parrafo">Inicio <br>
+                        Variables: ano_nac, ano_actual=2021, edad <br>
+                        Escribir ("Introducir Año de nacimiento") <br>
+                        Leer (ano_nac) <br>
+                        edad = ano_actual - ano_nac<br>
+                        Escribir ("Edad = ", edad) <br>
+                        Fin
+                    </p>
+                </li>
+                <li class="section__item">
+                    <p class="section__title">Se tiene el nombre y la edad de tres personas. Se desea saber el nombre y
+                        la
+                        edad de la persona de menor edad</p>
+                    <p class="section__parrafo">Inicio <br>
+                        Variables: edad_pedro=34, edad_juan=23, edad_jose=30, menor, nombre <br>
+                        menor=edad_pedro<br>
+                        nombre="Pedro" <br>
+                        Si edad_juan < menor <br>
+                            menor=edad_juan<br>
+                            nombre="juan"<br>
+                            FinSi <br>
+
+                            Si edad_jose < menor <br>
+                                menor=edad_jose<br>
+                                nombre="Jose"<br>
+                                FinSi <br>
+
+                                Escribir ("Nombre = ", nombre, menor) <br>
+
+                                Fin
+                    </p>
+                </li>
+                <li class="section__item">
+                    <p class="section__title">Se les dará un bono por antigüedad a los empleados de una tienda. Si
+                        tienen un
+                        año, se les dará $100; si tienen 2 años, $200, y así sucesivamente hasta los 5
+                        años. Para los que tengan más de 5, el bono será de $1000. Realice un algoritmo
+                        y represéntelo ,que permita determinar el bono que recibirá un trabajador</p>
+                    <p class="section__parrafo">Inicio <br>
+                        Variables: anos_antiguedad, bono <br>
+                        Si anos_antiguedad < 5 <br>
+                            bono=anos_antiguedad * 100
+
+                            Sino
+                            bono=5 * 100
+
+                            FinSi <br>
+
+                            Escribir ("Bonificación = ", bono) <br>
+
+                            Fin
+                    </p>
+                </li>
+                <li class="section__item">
+                    <p class="section__title">Un profesor tiene un salario inicial de $1500, y recibe un incremento de
+                        10 %
+                        anual
+                        durante 6 años. ¿Cuál es su salario al cabo de 6 años? ¿Qué salario ha recibido
+                        en cada uno de los 6 años? Realice el algoritmo y representan la solución,
+                        utilizando el ciclo apropiado</p>
+                    <p class="section__parrafo">Inicio <br>
+                        Variables: ano=0, salario=1500, porc=0.10 <br>
+
+                        Mientras ano <= 6 <br>
+                            ano=ano+1 <br>
+                            salario=salario + (salario * porc) <br>
+                            Escribir ("Salario por año=", salario) <br>
+                            FinMientras<br>
+                            Fin
+                    </p>
+
+                </li>
+                <li class=" section__item">
+                    <p class="section__title">Realice un algoritmo para leer las calificaciones de N alumnos y determine
+                        el
+                        número de aprobados y reprobados</p>
+                    <p class="section__parrafo">Inicio <br>
+                        Variables: aprobados=0, reprobados=0, resultado, estudiantes=0 <br>
+
+                        Mientras estudiantes <= 20 <br>
+                            estudiantes=estudiantes+1 <br>
+                            Escribir ("Ingrese nota") <br>
+                            Leer resultado <br>
+
+                            Si resultado >10 <br>
+                            aprobados= aprobados +1 <br>
+
+                            Sino <br>
+                            reprobados= reprobados +1 <br>
+
+                            EndSi <br>
+                            FinMientras<br>
+
+                            Escribir ("Aprobados=", aprobados) <br>
+                            Escribir ("Desaprobados=", desaprobados) <br>
+                            Fin
+                    </p>
+                </li>
+                <li class="section__item">
+                    <p class="section__title">Una compañía, fabrica focos de colores (verdes, blancos y rojos). Se desea
+                        contabilizar, de un lote de N focos, el número de focos de cada color que hay en
+                        existencia</p>
+                    <p class="section__parrafo">Inicio <br>
+                        Variables: verdes=0, blancos=0, rojos=0, color, focos=0 <br>
+
+                        Mientras focos <= 20 <br>
+                            focos=focos+1 <br>
+                            Escribir ("Ingrese color") <br>
+                            Leer color <br>
+
+                            Si color = "verde" <br>
+                            verdes= verdes + 1 <br>
+                            EndSi <br>
+
+                            Si color = "blanco" <br>
+                            blancos= blancos + 1 <br>
+                            EndSi <br>
+
+                            Si color = "rojo" <br>
+                            rojos= rojos + 1 <br>
+                            EndSi <br>
+
+
+                            FinMientras<br>
+
+                            Escribir ("Verdes=", verdes) <br>
+                            Escribir ("Rojos=", rojos) <br>
+                            Escribir ("Blancos=", blancos) <br>
+                            Fin
+                    </p>
+                </li>
+                <li class="section__item">
+                    <p class="section__title">Realice un algoritmo para determinar si una persona puede votar con base
+                        en
+                        su edad en las próximas elecciones</p>
+                    <p class="section__parrafo">Inicio <br>
+                        Variables: vota="NO", edad <br>
+
+                        Escribir ("Ingrese edad") <br>
+                        Leer edad <br>
+
+                        Si edad <= 65 <br>
+                            vota="SI" <br>
+                            EndSi <br>
+
+                            Escribir ("¿Puede votar?", vota) <br>
+
+                            Fin
+                    </p>
+                </li>
+            </ol>
+
+
+
+        </section>
+    </div>
+
 </body>
+
+
 </html>
